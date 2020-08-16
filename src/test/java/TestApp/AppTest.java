@@ -20,7 +20,7 @@ public class AppTest {
     // }
     @Test
     public void testAppHasAGreeting3() {
-        // App classUnderTest = new App();
+        App classUnderTest = new App();
         assertNotNull("app should have a greeting 3", classUnderTest.getGreeting());
     }
 
