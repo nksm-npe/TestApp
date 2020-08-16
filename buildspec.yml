@@ -3,9 +3,11 @@ version: 0.2
 phases: 
   install: 
     commands:
+      - echo "!!install command execution!!"
       - gradle -v 
   build: 
     commands: 
+      - echo "!!build command execution!!"
       - gradle clean
       - gradle assemble
       - gradle test
