@@ -1,0 +1,13 @@
+version: 0.2
+
+env:
+  variables:
+    JAVA_HOME: "/usr/lib/jvm/java-8-oracle"
+
+phases:
+  install:
+    commands:
+      - gradle -v
+  build:
+    commands:
+      - gradle build -x test
