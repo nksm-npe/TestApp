@@ -14,9 +14,9 @@ batch:
           #- aws/codebuild/windows-base:2.0
         variables:
           MY_VAR:
-            - AppTest.testAppHasAGreeting
-            - AppTest.testAppHasAGreeting2
-            - AppTest.testAppHasAGreeting3
+            - TestApp.AppTest.testAppHasAGreeting
+            - TestApp.AppTest.testAppHasAGreeting2
+            - TestApp.AppTest.testAppHasAGreeting3
 
 phases: 
   install: 
@@ -30,4 +30,5 @@ phases:
       - echo "!!build command execution!!"
       - gradle clean
       - gradle assemble
-      - gradle test
+      #- gradle test
+      - gradle test --tests $MY_VAR
