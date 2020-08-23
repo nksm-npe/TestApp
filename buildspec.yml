@@ -31,3 +31,8 @@ phases:
       - gradle assemble
       #- gradle test
       - gradle test --tests $MY_VAR
+
+artifacts:
+  files:
+    - build/reports/**/*
+  discard-paths: no
