@@ -14,8 +14,8 @@ batch:
           #- aws/codebuild/windows-base:2.0
         variables:
           MY_VAR:
-            - AppTest
-            - TestApp.AppTest
+            - AppTest.testAppHasAGreeting
+            - AppTest.testAppHasAGreeting3
 
 phases: 
   install: 
