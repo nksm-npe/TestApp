@@ -14,14 +14,16 @@ batch:
           #- aws/codebuild/windows-base:2.0
         variables:
           MY_VAR:
-            - VALUE1
-            - VALUE2
-            - VALUE3
+            - AppTest.testAppHasAGreeting
+            - AppTest.testAppHasAGreeting2
+            - AppTest.testAppHasAGreeting3
 
 phases: 
   install: 
     commands:
       - echo "!!install command execution!!"
+      - echo "VALUE OF PARAMETER MY_BAR IS BELOW;"
+      - echo $MY_BAR
       - gradle -v 
   build: 
     commands: 
