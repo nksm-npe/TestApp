@@ -22,8 +22,8 @@ phases:
   install: 
     commands:
       - echo "!!install command execution!!"
-      - echo "VALUE OF PARAMETER MY_BAR IS BELOW;"
-      - echo $MY_BAR
+      - echo "VALUE OF PARAMETER MY_VAR IS BELOW;"
+      - echo $MY_VAR
       - gradle -v 
   build: 
     commands: 
