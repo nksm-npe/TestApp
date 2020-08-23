@@ -36,3 +36,9 @@ artifacts:
   files:
     - build/reports/**/*
   discard-paths: no
+
+reports:
+  report-name-or-arn:
+    files:
+      - '**/*'
+    base-directory: build/test-results/
